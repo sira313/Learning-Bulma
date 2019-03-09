@@ -25,46 +25,21 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+    <!-- inlude html here -->
+    <script> 
+    $(function(){
+      $("#includedContent").load("/layout/navbar.html"); 
+    });
+    </script>
   </head>
   <body>
     <section class="hero is-light is-medium">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item">
-                <img src="/assets/images/logo.svg" alt="Logo">
-              </a>
-                <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-            </div>
-            <div id="navbarMenuHeroA" class="navbar-menu">
-              <div class="navbar-end">
-                <a href="/" class="navbar-item">
-                  Home
-                </a>
-                <a href="/gallery" class="navbar-item">
-                  Gallery
-                </a>
-                <a href="/blog" class="navbar-item">
-                  Blog
-                </a>
-                <span class="navbar-item">
-                  <a href="https://github.com/sira313/Learning-Bulma" class="button is-dark is-outlined">
-                    <span class="icon">
-                      <i data-feather="github"></i>
-                    </span>
-                    <span>Github</span>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <!-- Include navbar -->
+        <div id="includedContent"></div>
       </div>
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
