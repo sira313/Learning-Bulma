@@ -44,13 +44,32 @@
         <div class="hero-body">
           <div class="container">
             <div class="column is-one-quarter-fullhd is-one-third-desktop is-half-tablet">
-              <script> 
-              $(function(){
-                $("#includedPost").load("./hello-world/index.html"); 
-              });
-              </script>
-              <div id="includedPost" class="modal-button" data-target="modal-bis"></div>
-            </div>
+              <a class="box has-shadow-hover has-box-shadow modal-button" data-target="modal-bis" style="padding:0.5rem">
+                <p class="image is-2x3">
+                  <img src="./hello-world/cover.jpg" alt="seira">
+                </p>
+              </a>
+              <div id="modal-bis" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                  <header class="modal-card-head">
+                    <p class="modal-card-title">Hello world</p>
+                    <button class="delete" aria-label="close"></button>
+                  </header>
+                  <section class="modal-card-body">
+                    <script> 
+                    $(function(){
+                      $("#includeHello").load("./hello-world/index.html"); 
+                    });
+                    </script>
+                    <div id="includeHello"></div>
+                  </section>
+                  <footer class="modal-card-foot">
+                    <button class="button has-transparent-bg"><i data-feather="message-circle"></i></button>
+                    <button class="button has-transparent-bg"><i data-feather="share-2"></i></button>
+                  </footer>
+                </div>
+              </div>
           </div>
         </div>
     </section>
