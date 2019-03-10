@@ -29,7 +29,10 @@
     <!-- inlude html here -->
     <script> 
     $(function(){
-      $("#includedContent").load("/layout/navbar.html"); 
+      $("#includedContent").load("/layout/navbar.html");
+    },
+    function(){
+      $("#includeHello").load("./hello-world/index.html");
     });
     </script>
   </head>
@@ -60,11 +63,6 @@
                     <button class="delete" aria-label="close"></button>
                   </header>
                   <section class="modal-card-body">
-                    <script> 
-                    $(function(){
-                      $("#includeHello").load("./hello-world/index.html"); 
-                    });
-                    </script>
                     <div id="includeHello"></div>
                   </section>
                   <footer class="modal-card-foot">
