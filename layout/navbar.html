@@ -1,52 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- raleway fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <!-- use bulma -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" rel="stylesheet">
-    <!-- feathericons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="/assets/js/bulma.js"></script>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="navbar-brand">
-          <a href="/" class="navbar-item">
-            <img src="/assets/images/logo.svg" alt="Logo">
+<nav class="navbar is-light">
+  <div class="container">
+    <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/assets/images/logo.svg" alt="Aflasio" width="112" height="28">
+    </a>
+    <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/gallery/">
+        Gallery
+      </a>
+      <a class="navbar-item" href="/blog/">
+        Blog
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="#">
+          More
+        </a>
+        <div class="navbar-dropdown is-boxed">
+          <a class="navbar-item" href="#">
+            Friends
           </a>
-            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-        </div>
-        <div id="navbarMenuHeroA" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="/" class="navbar-item">
-              Home
-            </a>
-            <a href="/gallery" class="navbar-item">
-              Gallery
-            </a>
-            <a href="/blog" class="navbar-item">
-              Blog
-            </a>
-            <span class="navbar-item">
-              <a href="https://github.com/sira313/Learning-Bulma" class="button is-dark is-outlined">
-                <span class="icon">
-                  <i data-feather="github"></i>
-                </span>
-                <span>Github</span>
-              </a>
-            </span>
-          </div>
+          <a class="navbar-item" href="#">
+            About
+          </a>
         </div>
       </div>
-    </nav>
-    <script>
-      feather.replace()
-    </script>
-  </body>
-</html>
+    </div>
+
+    <div class="navbar-end">
+      <!-- socmed here -->
+      <div class="navbar-item">
+        <div class="field is-grouped">
+          <p class="control">
+            <a class="button has-transparent-bg" href="https://twitter.com/aflasio">
+              <span class="icon">
+                <i class="fab fa-twitter"></i>
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button has-transparent-bg" href="https://deviantart.com/aflasio">
+              <span class="icon">
+                <i class="fab fa-deviantart"></i>
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button has-transparent-bg" href="https://gitlab.com/sira313">
+              <span class="icon">
+                <i class="fab fa-gitlab"></i>
+              </span>
+            </a>
+          </p>
+          <p class="control">
+            <a class="button has-transparent-bg" href="mailto:sira.argia@gmail.com">
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>

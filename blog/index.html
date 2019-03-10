@@ -21,39 +21,43 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <!-- use bulma -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" rel="stylesheet">
+    <!-- custom css -->
+    <link href="/assets/css/bulma.css" rel="stylesheet">
+    <!-- use fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+    <!-- use w3css -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- use w3js -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <!-- feathericons -->
     <script src="https://unpkg.com/feather-icons"></script>
-  <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
-    <!-- inlude html here -->
-    <script> 
-    $(function(){
-      $("#includedContent").load("/layout/navbar.html"); 
-    });
-    </script>
+    <!-- custom script -->
+    <script src="/assets/js/bulma.js"></script>
   </head>
-  <body>
+    <body>
     <section class="hero is-light is-medium">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <!-- Include navbar -->
-        <div id="includedContent"></div>
+        <div w3-include-html="/layout/navbar.html"></div>
       </div>
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
           <div class="container has-text-centered">
-            <h1 class="title is-2">
+            <h1 class="title is22">
               Blog
             </h1>
-            <h2 class="subtitle is-4">
-              Hope you enjoy my stuff here
-            </h2>
+            <h4 class="subtitle is-4">
+              Just some trash stuff
+            </h4>
           </div>
         </div>
+        <div w3-include-html="/layout/footer.html"></div>
     </section>
-    <script src="/assets/js/bulma.js"></script>
-    <script>
-      feather.replace()
-    </script>
   </body>
+  <script>
+    w3.includeHTML();
+  </script>
 </html>

@@ -1,22 +1,24 @@
+/* for box */
 .has-shadow-hover {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
-  &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
-    .image {
-      opacity: 0.5;
-    }
-  }
 }
+.has-shadow-hover:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
 
 .has-box-shadow {
   box-shadow: 0 0px 10px #0000002d;
 }
 
+/* button */
 .has-transparent-bg {
   background-color: transparent;
   border: none;
-  &:hover {
-    background-color: $black-ter
-  }
 } 
+.has-transparent-bg:hover {
+    background-color: #e8e8e8
+  }
+
+/* Background for hero */
+.has-bg-img { background: url('https://bierpinter.com/wp-content/uploads/2018/05/website-design-background-1.jpg')center top; background-size:cover; }
